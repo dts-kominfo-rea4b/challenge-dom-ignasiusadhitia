@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f0f0f3;
+}
+
+section,
+li {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #6b59ef;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: medium;
+  color: #61677c;
+}
+
+input,
+button {
+  padding: 16px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ebecf0;
+}
+
+input {
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+
+button {
+  font-weight: 600;
+  color: #61677c;
+  box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px#FFF;
+}
+
+ul {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  background: #f0f0f3;
+  color: #636e72;
+  font-weight: 400;
+  box-shadow: -1px -1px 3px #ffffff, 1.5px 1.5px 3px rgba(174, 174, 192, 0.4);
+  border-radius: 5px;
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.01);
+}
+
+#app {
+  max-width: 800px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f0f0f3;
+  box-shadow: -1px -1px 3px #ffffff, 1.5px 1.5px 3px rgba(174, 174, 192, 0.4);
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
